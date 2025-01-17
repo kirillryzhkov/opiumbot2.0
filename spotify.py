@@ -2,11 +2,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import bot_tokens
 
-
-
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=bot_tokens.CLIENT_ID, client_secret=bot_tokens.CLIENT_SECRET))
 
-# Получение топ-10 треков из плейлиста
 def get_playlist_top_tracks(playlist_id):
     try:
         results = sp.playlist_items(playlist_id, limit=10)
@@ -23,7 +20,6 @@ def get_playlist_top_tracks(playlist_id):
         print(f"Ошибка: {e}")
         return None
 
-# Поиск треков
 def search_tracks(query):
     try:
         results = sp.search(q=query, type="track", limit=10)
@@ -39,7 +35,6 @@ def search_tracks(query):
         print(f"Ошибка поиска треков: {e}")
         return None
 
-# Получение профиля исполнителя
 def get_artist_profile(artist_name):
     try:
         result = sp.search(q=artist_name, type="artist", limit=1)
@@ -52,7 +47,6 @@ def get_artist_profile(artist_name):
         print(f"Ошибка поиска исполнителя: {e}")
         return None
 
-# Получение треков из альбома
 def get_album_tracks(album_name):
     try:
         results = sp.search(q=album_name, type="album", limit=1)
@@ -63,7 +57,6 @@ def get_album_tracks(album_name):
             album_name = album['name']
             artist_name = album['artists'][0]['name']
 
-            # Получаем треки альбома
             tracks = sp.album_tracks(album_id)
             tracks_list = []
 
@@ -81,12 +74,10 @@ def get_album_tracks(album_name):
 
 def get_top_tracks_for_artist(artist_name):
     try:
-        # Поиск исполнителя по имени
         result = sp.search(q=artist_name, type="artist", limit=3)
         if result['artists']['items']:
             artist_id = result['artists']['items'][0]['id']
 
-            # Получение топ треков
             top_tracks = sp.artist_top_tracks(artist_id)['tracks']
             tracks = []
 
