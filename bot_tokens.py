@@ -1,4 +1,4 @@
-bot_token = "7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0"
+bot_token = "tg bot token"
 
-CLIENT_ID = "f814986eaf0c4a26a48e8c4c0b486f0c"
-CLIENT_SECRET = "110eee39e3c342e797bfcfa7ee2a953f"
+CLIENT_ID = "spotify dashboard key id"
+CLIENT_SECRET = "spotify dashboard key secret"
