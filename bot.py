@@ -5,14 +5,12 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 from spotify import get_playlist_top_tracks, search_tracks, get_artist_profile, get_album_tracks, get_top_tracks_for_artist
 import bot_tokens
 
-# Настройка логирования
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
     handlers=[logging.FileHandler("bot_activity.log", mode="a"), logging.StreamHandler()]
 )
 
-# Подключение к базе данных
 conn = sqlite3.connect("user_data.db")
 cursor = conn.cursor()
 
@@ -28,7 +26,6 @@ CREATE TABLE IF NOT EXISTS users (
 
 
 
-# Главное меню
 MAIN_MENU = ReplyKeyboardMarkup(
     [["Топ-10 треков", "Поиск треков", "Профиль исполнителя", "Список треков из альбома", "Топ треки артиста"]],
     resize_keyboard=True
@@ -36,18 +33,15 @@ MAIN_MENU = ReplyKeyboardMarkup(
 
 def log_user_query(user_id, username, query):
     try:
-        # Проверяем последний запрос пользователя
         cursor.execute(
             "SELECT query FROM users WHERE user_id = ? ORDER BY id DESC LIMIT 1", (user_id,)
         )
         last_query = cursor.fetchone()
 
-        # Если последний запрос совпадает, не добавляем новый
         if last_query and last_query[0] == query:
             logging.info(f"Повторный запрос от пользователя {username} ({user_id}): {query}")
             return
 
-        # Если запрос новый, добавляем его
         cursor.execute(
             "INSERT INTO users (user_id, username, query) VALUES (?, ?, ?)",
             (user_id, username, query)
@@ -59,7 +53,6 @@ def log_user_query(user_id, username, query):
 
 
 
-# Команда /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.message.from_user
     log_user_query(user.id, user.username, "start")
@@ -69,7 +62,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup=MAIN_MENU
     )
 
-# Обработчик кнопок
 async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_input = update.message.text
     user = update.message.from_user
@@ -77,7 +69,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logging.info(f"Пользователь {user.username} ({user.id}) выбрал: {user_input}")
 
     if user_input == "Топ-10 треков":
-        playlist_id = "6qv7CRaZr9nJaamM8Xtrv6"  # Укажите ID плейлиста
+        playlist_id = "6qv7CRaZr9nJaamM8Xtrv6" 
         tracks = get_playlist_top_tracks(playlist_id)
         if tracks:
             message = "\n".join([f"{i+1}. {t['name']} - {t['artist']} [Слушать]({t['url']})" for i, t in enumerate(tracks)])
@@ -109,7 +101,6 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
         else:
             await update.message.reply_text("Пожалуйста, выберите действие из меню.")
 
-# Функции поиска
 async def search_for_tracks(update: Update, query):
     tracks = search_tracks(query)
     user = update.message.from_user
@@ -148,12 +139,10 @@ async def search_top_tracks(update: Update, artist_name):
 if __name__ == "__main__":
     app = ApplicationBuilder().token(bot_tokens.bot_token).build()
 
-    # Обработчики команд
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_menu))
 
     print("Бот запущен!")
     app.run_polling()
 
-    # Закрытие соединения с базой данных
     conn.close()
