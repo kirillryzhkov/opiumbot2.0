@@ -1,0 +1,299 @@
+2025-01-17 05:10:03,827 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:10:03,927 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:10:03,928 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:10:14,232 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:10:16,407 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:10:16,417 - root - INFO - Пользователь shpek616 (673739010) использовал команду /start
+2025-01-17 05:10:16,755 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:10:21,062 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:10:21,063 - telegram.ext.Application - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\telegram\ext\_application.py", line 1319, in process_update
+    await coroutine
+  File "C:\Python312\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kirill\Desktop\OpiumGG\bot.py", line 52, in handle_menu
+    log_user_query(user.id, user.username, user_input)
+  File "C:\Users\Kirill\Desktop\OpiumGG\bot.py", line 35, in log_user_query
+    cursor.execute("INSERT INTO users (user_id, username, query) VALUES (?, ?, ?)", (user_id, username, query))
+sqlite3.IntegrityError: UNIQUE constraint failed: users.user_id
+2025-01-17 05:10:31,180 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:10:41,283 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:10:51,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:01,481 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:11,580 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:18,862 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:18,862 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:11:18,862 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 05:11:35,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:11:35,589 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:11:35,590 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:11:37,942 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:37,952 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:11:38,729 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:11:41,439 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:41,449 - root - INFO - Пользователь shpek616 (673739010) выбрал: Поиск треков
+2025-01-17 05:11:41,573 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:11:49,412 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:11:49,421 - root - INFO - Пользователь shpek616 (673739010) выбрал: абу даби
+2025-01-17 05:11:50,102 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:11:59,836 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:12:09,941 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:12:20,052 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:12:30,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:12:40,261 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:12:50,362 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:13:00,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:13:10,563 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:13:20,664 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:13:30,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:13:40,870 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:13:50,968 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:01,068 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:11,167 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:21,267 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:31,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:41,467 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:47,431 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:47,439 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:14:47,983 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:14:49,652 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:14:49,661 - root - INFO - Пользователь shpek616 (673739010) выбрал: Профиль исполнителя
+2025-01-17 05:14:49,775 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:14:59,770 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:01,116 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:01,126 - root - INFO - Пользователь shpek616 (673739010) выбрал: seregha pirat
+2025-01-17 05:15:01,752 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:15:09,259 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:09,269 - root - INFO - Пользователь shpek616 (673739010) выбрал: Список треков из альбома
+2025-01-17 05:15:09,593 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:15:14,402 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:14,411 - root - INFO - Пользователь shpek616 (673739010) выбрал: tragic city
+2025-01-17 05:15:15,097 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:15:17,913 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:17,922 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ треки артиста
+2025-01-17 05:15:18,083 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:15:20,389 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:20,398 - root - INFO - Пользователь shpek616 (673739010) выбрал: dora
+2025-01-17 05:15:20,979 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:15:30,919 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:41,017 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:15:51,119 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:16:01,219 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:16:11,352 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:16:21,451 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:16:31,553 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:16:41,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:16:51,753 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:01,854 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:11,955 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:22,053 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:32,152 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:42,253 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:46,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:46,260 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:17:46,260 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 05:17:47,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:17:47,771 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:17:47,773 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:17:52,852 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:52,852 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:17:52,852 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:17:53,539 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:17:54,393 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:17:54,393 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:17:54,395 - root - INFO - Пользователь shpek616 (673739010) выбрал: Поиск треков
+2025-01-17 05:17:54,515 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:01,306 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:01,307 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:01,307 - root - INFO - Пользователь shpek616 (673739010) выбрал: мой байк
+2025-01-17 05:18:01,581 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:01,920 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:04,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:04,159 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:04,159 - root - INFO - Пользователь shpek616 (673739010) выбрал: Профиль исполнителя
+2025-01-17 05:18:04,272 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:11,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:11,602 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:11,602 - root - INFO - Пользователь shpek616 (673739010) выбрал: lsp
+2025-01-17 05:18:11,784 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:12,104 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:14,121 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:14,122 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:14,122 - root - INFO - Пользователь shpek616 (673739010) выбрал: Список треков из альбома
+2025-01-17 05:18:14,239 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:19,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:19,149 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:19,149 - root - INFO - Пользователь shpek616 (673739010) выбрал: tragic city
+2025-01-17 05:18:19,479 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:19,843 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:21,445 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:21,445 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:21,446 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ треки артиста
+2025-01-17 05:18:21,562 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:28,797 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:28,797 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:28,797 - root - INFO - Пользователь shpek616 (673739010) выбрал: serega pirat
+2025-01-17 05:18:29,187 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:18:29,512 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:18:39,361 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:49,466 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:18:59,571 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:19:09,674 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:19:19,783 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:19:29,888 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:19:39,995 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:19:50,096 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:00,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:04,010 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:04,011 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:20:04,011 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 05:20:05,565 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:20:05,665 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:20:05,669 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:20:15,975 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:26,076 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:29,510 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:29,511 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:20:29,511 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:20:30,260 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:20:33,328 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:33,328 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:20:33,328 - root - INFO - Пользователь shpek616 (673739010) выбрал: Поиск треков
+2025-01-17 05:20:33,526 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:20:36,508 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:36,510 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:20:36,511 - root - INFO - Пользователь shpek616 (673739010) выбрал: gagaga
+2025-01-17 05:20:36,878 - root - ERROR - Ошибка записи в базу данных: UNIQUE constraint failed: users.user_id
+2025-01-17 05:20:37,024 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:20:46,984 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:20:57,086 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:07,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:17,288 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:21,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:21,128 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:21:21,128 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 05:21:30,879 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:21:30,982 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:21:30,982 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:21:33,754 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:33,763 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:21:34,271 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:36,877 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:36,885 - root - INFO - Пользователь shpek616 (673739010) выбрал: Поиск треков
+2025-01-17 05:21:37,001 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:40,320 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:40,330 - root - INFO - Пользователь shpek616 (673739010) выбрал: gagag
+2025-01-17 05:21:40,693 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:42,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:42,700 - root - INFO - Пользователь shpek616 (673739010) выбрал: Профиль исполнителя
+2025-01-17 05:21:42,831 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:45,348 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:45,357 - root - INFO - Пользователь shpek616 (673739010) выбрал: lsp
+2025-01-17 05:21:45,647 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:47,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:47,497 - root - INFO - Пользователь shpek616 (673739010) выбрал: Список треков из альбома
+2025-01-17 05:21:47,621 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:52,549 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:52,557 - root - INFO - Пользователь shpek616 (673739010) выбрал: tragic city
+2025-01-17 05:21:53,238 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:56,707 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:56,715 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ треки артиста
+2025-01-17 05:21:56,834 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:21:59,241 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:21:59,250 - root - INFO - Пользователь shpek616 (673739010) выбрал: dora
+2025-01-17 05:21:59,800 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:22:09,763 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:22:19,866 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:22:29,975 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:22:40,074 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:22:50,177 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:00,286 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:10,388 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:20,492 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:30,609 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:34,233 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:34,235 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:23:34,235 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 05:23:49,436 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:23:49,540 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:23:49,541 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:23:52,630 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:52,640 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:23:53,156 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:23:54,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:54,955 - root - INFO - Пользователь shpek616 (673739010) выбрал: Поиск треков
+2025-01-17 05:23:55,073 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:23:59,723 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:23:59,733 - root - INFO - Пользователь shpek616 (673739010) выбрал: моя нога
+2025-01-17 05:24:00,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:24:04,056 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:04,066 - root - INFO - Пользователь shpek616 (673739010) выбрал: Профиль исполнителя
+2025-01-17 05:24:04,211 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:24:14,167 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:24,268 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:31,101 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:31,151 - root - INFO - Пользователь shpek616 (673739010) выбрал: zemfira
+2025-01-17 05:24:31,762 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:24:34,382 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:34,389 - root - INFO - Пользователь shpek616 (673739010) выбрал: Список треков из альбома
+2025-01-17 05:24:34,511 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:24:44,489 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:48,844 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:48,854 - root - INFO - Пользователь shpek616 (673739010) выбрал: несчастные люди
+2025-01-17 05:24:49,690 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:24:54,596 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:24:54,605 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ треки артиста
+2025-01-17 05:24:54,728 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:25:04,715 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:25:14,815 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:25:16,528 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:25:16,536 - root - INFO - Пользователь shpek616 (673739010) выбрал: nervy
+2025-01-17 05:25:17,222 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:25:26,988 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:25:37,087 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:25:47,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:25:57,284 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:07,385 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:17,486 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:27,584 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:35,136 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:35,136 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:26:35,136 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 05:26:36,728 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 05:26:36,826 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 05:26:36,827 - telegram.ext.Application - INFO - Application started
+2025-01-17 05:26:44,575 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:44,585 - root - INFO - Пользователь shpek616 (673739010) выбрал: Топ-10 треков
+2025-01-17 05:26:45,258 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:26:46,155 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:26:46,164 - root - INFO - Пользователь shpek616 (673739010) выбрал: Список треков из альбома
+2025-01-17 05:26:46,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:26:56,262 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:02,536 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:02,545 - root - INFO - Пользователь shpek616 (673739010) выбрал: magic city
+2025-01-17 05:27:02,917 - root - INFO - Повторный запрос от пользователя shpek616 (673739010): magic city
+2025-01-17 05:27:03,243 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:27:05,206 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:05,215 - root - INFO - Пользователь shpek616 (673739010) выбрал: Профиль исполнителя
+2025-01-17 05:27:05,333 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:27:11,857 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:11,866 - root - INFO - Пользователь shpek616 (673739010) выбрал: newlightchild
+2025-01-17 05:27:12,031 - root - INFO - Повторный запрос от пользователя shpek616 (673739010): newlightchild
+2025-01-17 05:27:12,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/sendMessage "HTTP/1.1 200 OK"
+2025-01-17 05:27:22,127 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:32,225 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:42,324 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:46,946 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 05:27:46,947 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 05:27:46,947 - telegram.ext.Application - INFO - Application.stop() complete
+2025-01-17 06:03:15,190 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 06:03:15,292 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 06:03:15,295 - telegram.ext.Application - INFO - Application started
+2025-01-17 06:06:42,581 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getMe "HTTP/1.1 200 OK"
+2025-01-17 06:06:42,682 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-17 06:06:42,683 - telegram.ext.Application - INFO - Application started
+2025-01-17 06:06:47,315 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7981804116:AAGIz41m01LUCF1FHRSgyFmyFlcDPDuOsS0/getUpdates "HTTP/1.1 200 OK"
+2025-01-17 06:06:47,315 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2025-01-17 06:06:47,316 - telegram.ext.Application - INFO - Application.stop() complete
